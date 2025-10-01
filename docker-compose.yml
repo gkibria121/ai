@@ -1,0 +1,15 @@
+services:
+  notebook-viewer:
+    build: .
+    volumes:
+      - ./projects:/projects
+    networks:
+      - traefik-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.notebook-viewer.rule=Host(`data-science.gkibria121.com`)"
+      - "traefik.http.routers.notebook-viewer.entrypoints=web"
+      - "traefik.http.services.notebook-viewer.loadbalancer.server.port=80"
+networks:
+  traefik-network:
+    external: true

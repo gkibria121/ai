@@ -1,0 +1,10 @@
+numpy
+openpyxl
+pandas
+pyarrow
+pyjanitor
+ipykernel
+matplotlib
+nbconvert
+notebook 
+nbconvert
