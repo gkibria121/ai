@@ -8,3 +8,4 @@ matplotlib
 nbconvert
 notebook 
 nbconvert
+scikit-learn     
