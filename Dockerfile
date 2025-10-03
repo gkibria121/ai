@@ -10,11 +10,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy project notebooks and data.rar
-COPY projects /projects
-COPY data.rar data.rar
-
-# Extract data.rar using unrar-free
-RUN unrar-free x data.rar /
+COPY projects /projects  
 
 # Install Python dependencies (nbconvert, etc.)
 RUN pip install -r requirements.txt
