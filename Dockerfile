@@ -6,7 +6,7 @@ COPY requirements.txt requirements.txt
 
 # Install Python deps, Nginx, and unrar-free
 RUN apt-get update && \
-    apt-get install -y nginx unrar-free && \
+    apt-get install -y nginx   && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy project notebooks and data.rar
