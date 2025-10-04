@@ -9,3 +9,5 @@ nbconvert
 notebook 
 nbconvert
 scikit-learn     
+tensorflow
+seaborn

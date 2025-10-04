@@ -1,5 +1,5 @@
 # Use Python image for nbconvert
-FROM python:3.13-slim
+FROM python:3.12-slim
 
 # Copy requirements first
 COPY requirements.txt requirements.txt
